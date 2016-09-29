@@ -105,6 +105,8 @@ print str(u"abc")  # 'abc'
 print u"äöü"
 print unicode('\xc3\xa4\xc3\xb6\xc3\xbc', 'utf-8')
 
+# string中的替换。
+print "My name is %s and weight is %d kg!" % ('Weston', 66)
 
 
 #    +---+---+---+---+---+---+

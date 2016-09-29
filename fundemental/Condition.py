@@ -68,3 +68,15 @@ var = 100
 if var != 100:
     print "变量 var 的值为100"
 print "Good bye!"
+
+# in 和 not in 操作符。
+a = "Hello"
+if "H" in a:
+    print "H 在变量 a 中"
+else:
+    print "H 不在变量 a 中"
+
+if "M" not in a:
+    print "M 不在变量 a 中"
+else:
+    print "M 在变量 a 中"
