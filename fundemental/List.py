@@ -1,8 +1,17 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-# list的定义。
+from collections import deque
+
+# list的定义与赋值。
 squares = [1, 4, 9, 16, 25]
+squares1 = [x ** 2 for x in range(10)]
+
+# for循环赋值，采取的格式为[ 表达式 for 变量 in 数组 if 布尔表达式]
+vec = [-4, -2, 0, 2, 4]
+var = [x * 2 for x in vec]
+var = [x for x in vec if x >= 0]
+var = [abs(x) for x in vec]
 
 # list 的索引
 print squares[0]  # indexing returns the item
@@ -37,14 +46,13 @@ print a.pop()
 
 # list可以当作堆栈来用。
 stack = [3, 4, 5]
+stack.pop()
 stack.append(6)
 stack.append(7)
-stack.pop()
 stack.pop()
 print stack
 
 # 将list变成一个队列来用
-from collections import deque
 
 queue = deque(["Eric", "John", "Michael"])
 queue.append("Terry")  # Terry arrives
