@@ -108,6 +108,9 @@ print unicode('\xc3\xa4\xc3\xb6\xc3\xbc', 'utf-8')
 # string中的替换。
 print "My name is %s and weight is %d kg!" % ('Weston', 66)
 
+# 赋值的特殊方式。
+string1, string2, string3 = '', 'Trondheim', 'Hammer Dance'
+non_null = string1 or string2 or string3
 
 #    +---+---+---+---+---+---+
 #    | P | y | t | h | o | n |
